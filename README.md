@@ -7,5 +7,7 @@
 #### Concepts
 
 #### Technologies Used
+* java
+* while loops
 
 #### Lessons Learned
