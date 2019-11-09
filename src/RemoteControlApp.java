@@ -59,6 +59,7 @@ public class RemoteControlApp {
 		turningOff();
 		turningOff();
 		turningOff();
+		key.close();
 	}
 
 	public static void pressButton() {
@@ -71,6 +72,7 @@ public class RemoteControlApp {
 
 	public static void turningOff() {
 		System.out.println("TURNING OFF...");
+		
 	}
 
 	public static void notRecognized() {
