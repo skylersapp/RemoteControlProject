@@ -5,6 +5,7 @@ public class RemoteControlApp {
 	public static void main(String[] args) {
 		Scanner key = new Scanner(System.in);
 		String on; 
+		int number = 0; 
 		
 		System.out.println("To begin, turn on the remote control.\n");
 		asciiRemote();
@@ -21,6 +22,9 @@ public class RemoteControlApp {
 		turningOn();
 		turningOn();
 		turningOn();
+		System.out.println("\nPress any button for sound. \"OFF\" will turn remote off again. ");
+		System.out.print("Button press >>: ");
+		while ((number < 10) && (number > -1));
 		
 		
 		
@@ -31,6 +35,9 @@ public class RemoteControlApp {
 	}
 	public static void turningOn() {
 		System.out.println("TURNING ON... ");
+	}
+	public static void turningOff() {
+		System.out.println("TURNING OFF...");
 	}
 	public static void asciiRemote() {
 		System.out.println(""
