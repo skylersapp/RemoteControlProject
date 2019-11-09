@@ -39,15 +39,12 @@ public class RemoteControlApp {
 				case "7":
 				case "8":
 				case "9":
+					System.out.println();
 					pressButton();
 					System.out.print(">>: ");
 					button = key.next().toLowerCase();
 					break;
 				case "off":
-					System.out.println();
-					turningOff();
-					turningOff();
-					turningOff();
 					break;
 				default:
 					System.out.println();
@@ -88,5 +85,3 @@ public class RemoteControlApp {
 	}
 
 }
-// TODO: Add pressButton() method
-// TODO: Add turningON() method
