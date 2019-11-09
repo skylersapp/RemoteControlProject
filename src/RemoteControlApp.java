@@ -5,26 +5,54 @@ public class RemoteControlApp {
 	public static void main(String[] args) {
 		Scanner key = new Scanner(System.in);
 		String on; 
-		int number = 0; 
+		String button; 
 		
-		System.out.println("To begin, turn on the remote control.\n");
-		asciiRemote();
-		System.out.print(">>: ");
-		on = key.next().toLowerCase();
-		
-		while (!on.equals("on")){
-			System.out.println("\nTo begin, turn on the remote control.");
-			System.out.println("\t\t(to turn on, type in a \"button press\"!)");
-			System.out.print(">>: ");
-			on = key.next();
-		} 
-		System.out.println();
-		turningOn();
-		turningOn();
-		turningOn();
+//		System.out.println("To begin, turn on the remote control.\n");
+//		asciiRemote();
+//		System.out.print(">>: ");
+//		on = key.next().toLowerCase();
+//		
+//		while (!on.equals("on")){
+//			System.out.println("\nTo begin, turn on the remote control.");
+//			System.out.println("\t\t(to turn on, type in a \"button press\"!)");
+//			System.out.print(">>: ");
+//			on = key.next();
+//		} 
+//		System.out.println();
+//		turningOn();
+//		turningOn();
+//		turningOn();
 		System.out.println("\nPress any button for sound. \"OFF\" will turn remote off again. ");
 		System.out.print("Button press >>: ");
-		while ((number < 10) && (number > -1));
+		button = key.next().toLowerCase();
+		
+		switch (button) {
+			case "1":
+			case "2":
+			case "3":
+			case "4":
+			case "5":
+			case "6":
+			case "7":
+			case "8":
+			case "9":
+				pressButton();
+				break;
+			case "off":
+				System.out.println();
+				turningOff();
+				turningOff();
+				turningOff();
+				break;
+			default: 
+				notRecognized();
+				
+					
+					
+		
+		
+		
+		}
 		
 		
 		
@@ -38,6 +66,9 @@ public class RemoteControlApp {
 	}
 	public static void turningOff() {
 		System.out.println("TURNING OFF...");
+	}
+	public static void notRecognized() {
+		System.out.println("COMMAND NOT RECOGNIZED.");
 	}
 	public static void asciiRemote() {
 		System.out.println(""
