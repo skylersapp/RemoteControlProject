@@ -11,13 +11,13 @@ public class RemoteControlApp {
 		asciiRemote();
 		System.out.print(">>: ");
 		on = key.next().toLowerCase();
-		
-		while (!on.equals("on")){
+
+		while (!on.equals("on")) {
 			System.out.println("\nTo begin, turn on the remote control.");
 			System.out.println("\t\t(to turn on, type in a \"button press\"!)");
 			System.out.print(">>: ");
 			on = key.next();
-		} 
+		}
 		System.out.println();
 		turningOn();
 		turningOn();
@@ -54,7 +54,7 @@ public class RemoteControlApp {
 
 			}
 		} while (!button.equals("off"));
-		
+
 		System.out.println();
 		turningOff();
 		turningOff();
@@ -72,7 +72,7 @@ public class RemoteControlApp {
 
 	public static void turningOff() {
 		System.out.println("TURNING OFF...");
-		
+
 	}
 
 	public static void notRecognized() {
@@ -80,7 +80,7 @@ public class RemoteControlApp {
 	}
 
 	public static void asciiRemote() {
-		System.out.println("" + "\t _______________\n" + "\t/  ___________  \\\n" + "\t| | on || off | |\n"
+		System.out.println("" + "\t _______________\n" + "\t/  ____  _____  \\\n" + "\t| | on || off | |\n"
 				+ "\t| |____||_____| |\n" + "\t|  ___ ___ ___  |\n" + "\t| | 1 | 2 | 3 | |\n" + "\t| |___|___|___| |\n"
 				+ "\t| | 4 | 5 | 6 | |\n" + "\t| |___|___|___| |\n" + "\t| | 7 | 8 | 9 | |\n" + "\t| |___|___|___| |\n"
 				+ "\t|     | 0 |     |\n" + "\t|     |___|     |\n" + "\t\\_______________/\n");

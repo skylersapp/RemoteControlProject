@@ -4,7 +4,8 @@
 
 ![Alt Text](https://media.licdn.com/dms/image/C510BAQGcpYt2uJmayQ/company-logo_200_200/0?e=2159024400&v=beta&t=8O5Shdlep30sQ_juAPhlhUJi1jz-wl7FrJom6oG4cnw)
 #### Overview
-We are going to simulate a remote control. It will have buttons "0" to "9", "ON", and "OFF". In order to operate the remote control, the user must first turn it on. Once it is turned on, the user can enter a number from 0 through 9, or turn the remote control back off.
+We are going to simulate a remote control. It will have buttons "0" to "9", "ON", and "OFF". In order to operate the remote control, the user must first turn it on. Nothing else will be allowed to be "pressed". Once it is turned on, the user can enter a number from 0 through 9, simulating button presses and sounds, or turn the remote control back off. Turning it off is the only way to close the program. 
+
 #### Concepts
 * **Java programming language**
 
